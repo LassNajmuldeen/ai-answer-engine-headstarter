@@ -23,8 +23,21 @@ export async function POST(req: Request) {
       console.log("Url found", url);
       const scrapedResponse = await scrapeUrl(url);
       console.log("Scraped content", scrapedContent);
+      scrapedContent = scrapedResponse.content;
     }
 
+    const userQuery = message.replace(url ? url[0] : '', '').trim();
+
+    const prompt = `
+    Answer my question: "${userQuery}"
+
+    Based on the following content:
+    <content>
+    ${scrapedContent}
+    </content>
+
+    `
+    console.log("PROMPT", prompt)
     const respone = await getGroqResponse(message);
 
     return NextResponse.json({message: respone})

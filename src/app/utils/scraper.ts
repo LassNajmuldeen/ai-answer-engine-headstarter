@@ -21,7 +21,7 @@ export async function scrapeUrl(url: string) {
             .map((_, el) => $(el).text().trim())
             .get()
             .join(" ")
-            .slice(0, 100000); // Slice to the first 100,000 characters
+            .slice(0, 50000); // Slice to the first 100,000 characters
 
         // Return extracted properties
         return {
