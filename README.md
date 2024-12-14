@@ -1,6 +1,6 @@
 # AI Answer Engine
 
-Welcome to the AI Answer Engine, a project developed as part of my residency at Headstarter. This project leverages cutting-edge technologies in web scraping, natural language processing (NLP), and large language models (LLMs) to build an intelligent, explainable AI system for answering user queries with cited sources. Inspired by the principles of responsible AI, this tool is designed to deliver accurate and transparent insights by contextualizing data scraped from the web.
+Welcome to the AI Answer Engine, a project developed as part of my residency at Headstarter. Inspired by perpelexity.ai, this project leverages technologies in web scraping, natural language processing (NLP), and large language models (LLMs) to build an intelligent, explainable AI system for answering user queries with cited sources. Inspired by the principles of responsible AI, this tool is designed to deliver accurate and transparent insights by contextualizing data scraped from the web.
 
 ## 🚀 Project Overview
 
